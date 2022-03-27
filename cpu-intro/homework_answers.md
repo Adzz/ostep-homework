@@ -134,4 +134,18 @@ pleted an I/O again be a good idea?
 ./process-run.py -l 3:0,5:100,5:100,5:100 -S SWITCH_ON_IO -I IO_RUN_IMMEDIATE -cp
 ```
 
-Here we run IO as soon as it's available, effectively the "waiting for the IO" happens while the other processes are using CPU.
+Here we run IO as soon as it's available, effectively the "waiting for the IO" happens while the other processes are using CPU?
+
+# 8
+
+> Now run with some randomly generated processes: -s 1 -l 3:50,3:50
+or -s 2 -l 3:50,3:50 or -s 3 -l 3:50,3:50. See if you can
+predict how the trace will turn out. What happens when you use
+the flag -I IO RUN IMMEDIATE vs. -I IO RUN LATER? What hap-
+pens when you use -S SWITCH ON IO vs. -S SWITCH ON END?
+
+
+
+
+
+
