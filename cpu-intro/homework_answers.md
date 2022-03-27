@@ -145,7 +145,15 @@ the flag -I IO RUN IMMEDIATE vs. -I IO RUN LATER? What hap-
 pens when you use -S SWITCH ON IO vs. -S SWITCH ON END?
 
 
+```sh
+./process-run.py -s 2 -l 3:50,3:50 -cp -I IO_RUN_IMMEDIATE
+./process-run.py -s 2 -l 3:50,3:50 -cp -I IO_RUN_LATER
 
+./process-run.py -s 2 -l 3:50,3:50 -cp -S SWITCH_ON_END -I IO_RUN_IMMEDIATE
+./process-run.py -s 2 -l 3:50,3:50 -cp -S SWITCH_ON_END -I IO_RUN_LATER
 
+./process-run.py -s 2 -l 3:50,3:50 -cp -S SWITCH_ON_IO -I IO_RUN_IMMEDIATE
+./process-run.py -s 2 -l 3:50,3:50 -cp -S SWITCH_ON_IO -I IO_RUN_LATER
+```
 
 
